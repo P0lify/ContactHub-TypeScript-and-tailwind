@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css",
+    "build:js": "npx tsc",
+    "build": "npm run build:css && npm run build:js",
+    "watch:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+  },
   "devDependencies": {
     "typescript": "^7.0.2"
   },
